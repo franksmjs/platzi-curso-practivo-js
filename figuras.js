@@ -43,6 +43,10 @@ console.groupEnd();
 // + "cm"
 //);
 
+// const alturaTriangulo = 5.5;
+// console.log("La altura del triángulo es de: " + alturaTriangulo + "cm");
+console.group("Triangulos");
+
 function perimetroTriangulo(lado1,lado2,base){
     return lado1 + lado2 + base;
 };
@@ -65,16 +69,22 @@ console.group("Circulos");
 // Diametro
 function diametroCirculo(radio){
     return radio * 2;
-};
+}
 
 // PI
-const perimetro = Math.PI;
+const PI = Math.PI;
 console.log("PI es:" + PI);
 
 // Circunferencia
-function perimetroCirculo(radio){
-    return (radio * radio) * PI;
-};
+function perimetroCirculo(radio) {
+  const diametro = diametroCirculo(radio);
+  return diametro * PI; 
+}
+
+// Área
+function areaCirculo(radio) {
+  return (radio * radio) * PI;
+}
 
 console.groupEnd();
 

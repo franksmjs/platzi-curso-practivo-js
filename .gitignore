@@ -63,7 +63,7 @@ typings/
 .node_repl_history
 
 # Output of 'npm pack'
-*.tgz
+*.tgz 
 
 # Yarn Integrity file
 .yarn-integrity
@@ -97,7 +97,7 @@ dist
 # FuseBox cache
 .fusebox/
 
-# DynamoDB Local files
+# DynamoDB Local f
 .dynamodb/
 
 # TernJS port file
